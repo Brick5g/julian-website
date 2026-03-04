@@ -1,3 +1,11 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
-document.querySelector("body").appendChild(h2);
+const button = document.getElementById("toggleBtn");
+const bio = document.getElementById("bio");
+
+button.addEventListener("click", function () {
+  if (bio.style.display === "none") {
+    bio.style.display = "block";
+  } else {
+    bio.style.display = "none";
+  }
+});
+
